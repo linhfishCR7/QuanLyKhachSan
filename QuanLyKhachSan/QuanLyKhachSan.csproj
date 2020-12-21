@@ -444,6 +444,7 @@
     <Content Include="Admin\assets\libs\twitter-bootstrap-wizard\jquery.bootstrap.wizard.min.js" />
     <Content Include="Admin\assets\libs\x-editable\bootstrap-editable.css" />
     <Content Include="Admin\assets\libs\x-editable\bootstrap-editable.min.js" />
+    <Content Include="Admin\CaLam.aspx" />
     <Content Include="Admin\Dashboard.aspx" />
     <Content Include="Admin\auth\Login.aspx" />
     <Content Include="Admin\auth\Logout.aspx" />
@@ -1897,6 +1898,13 @@
     </Compile>
     <Compile Include="Admin\auth\Auth.Master.designer.cs">
       <DependentUpon>Auth.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CaLam.aspx.cs">
+      <DependentUpon>CaLam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CaLam.aspx.designer.cs">
+      <DependentUpon>CaLam.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
