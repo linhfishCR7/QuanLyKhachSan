@@ -18,7 +18,7 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/libs/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/libs/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
 
     <link href="add/css/style.css" rel="stylesheet" type="text/css" />
 
@@ -875,7 +875,7 @@
                 </div>
                 <!-- end container-fluid -->
             </div>
-            <!-- end content -->
+        <!-- end content -->
         </div>
         <!-- ============================================================== -->
         <!-- End Page content -->

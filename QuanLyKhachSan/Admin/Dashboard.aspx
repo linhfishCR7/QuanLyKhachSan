@@ -3,7 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentAdmin" runat="server">
-    <div class="content-page">
         <div class="content">
 
             <!-- Start Content-->
@@ -583,5 +582,4 @@
         </footer>
         <!-- end Footer -->
 
-    </div>
 </asp:Content>
