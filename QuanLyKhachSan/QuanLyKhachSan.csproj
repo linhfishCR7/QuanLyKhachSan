@@ -449,6 +449,9 @@
     <Content Include="Admin\auth\Login.aspx" />
     <Content Include="Admin\auth\Logout.aspx" />
     <Content Include="Admin\auth\Register.aspx" />
+    <Content Include="Admin\DichVu.aspx" />
+    <Content Include="Admin\LoaiPhong.aspx" />
+    <Content Include="Admin\ThietBi.aspx" />
     <Content Include="Admin\Users.aspx" />
     <Content Include="Admin\ViTriCongTac.aspx" />
     <Content Include="ckeditor\adapters\jquery.js" />
@@ -1933,6 +1936,27 @@
     </Compile>
     <Compile Include="Admin\auth\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DichVu.aspx.cs">
+      <DependentUpon>DichVu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DichVu.aspx.designer.cs">
+      <DependentUpon>DichVu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\LoaiPhong.aspx.cs">
+      <DependentUpon>LoaiPhong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LoaiPhong.aspx.designer.cs">
+      <DependentUpon>LoaiPhong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ThietBi.aspx.cs">
+      <DependentUpon>ThietBi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ThietBi.aspx.designer.cs">
+      <DependentUpon>ThietBi.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Users.aspx.cs">
       <DependentUpon>Users.aspx</DependentUpon>
