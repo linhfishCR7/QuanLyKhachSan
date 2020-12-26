@@ -23,7 +23,7 @@
 
                         <asp:GridView ID="GridView1" runat="server" Width="100%" HorizontalAlign="Center" OnRowCommand="GridView1_RowCommand"
                             AutoGenerateColumns="False"
-                            DataKeyNames="VTCT_MA" CssClass="table table-striped table-responsive table-hover table-bordered" Style="border-collapse: collapse; border-spacing: 0; width: 100%;" DataSourceID="SqlDataSource1">
+                            DataKeyNames="VTCT_MA" CssClass="table table-striped table-responsive table-hover table-bordered" Style="border-collapse: collapse; border-spacing: 0; width: 100%;" DataSourceID="SqlDataSource1" AllowPaging="True" PageSize="20">
                             <Columns>
                                 <asp:ButtonField CommandName="editRecord" HeaderText="Edit" ButtonType="Link" Text='<i class="fe-edit"></i>' ItemStyle-Width="40px">
                                     <ControlStyle CssClass="btn btn-xs mauvang"></ControlStyle>

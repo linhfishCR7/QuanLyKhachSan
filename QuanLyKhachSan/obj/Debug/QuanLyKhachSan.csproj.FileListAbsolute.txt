@@ -80,3 +80,4 @@ D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhach
 D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\CKEditor.NET.dll
 D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\CKFinder.dll
 D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\CKFinder.pdb
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\AjaxControlToolkit.dll

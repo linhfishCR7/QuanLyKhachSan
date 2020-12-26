@@ -7,7 +7,7 @@
         <asp:Panel ID="panelPhanQuyen" runat="server">
         <div class="list-group my-3">
             <div class="list-group-item maudo">
-                UPDATE SHIFT
+                UPDATE APPLICATION DEVICES
             </div>
             <div class="list-group-item limit-500">
                 <asp:UpdatePanel ID="upCrudGrid" runat="server">

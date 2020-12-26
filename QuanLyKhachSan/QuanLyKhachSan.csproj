@@ -43,6 +43,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.20.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="CKEditor.NET">
       <HintPath>..\..\..\..\..\..\..\PMCDB\PMCDB\bin\CKEditor.NET.dll</HintPath>
     </Reference>
@@ -452,6 +456,7 @@
     <Content Include="Admin\DichVu.aspx" />
     <Content Include="Admin\LoaiPhong.aspx" />
     <Content Include="Admin\ThietBi.aspx" />
+    <Content Include="Admin\ThoiGian.aspx" />
     <Content Include="Admin\Users.aspx" />
     <Content Include="Admin\ViTriCongTac.aspx" />
     <Content Include="ckeditor\adapters\jquery.js" />
@@ -1957,6 +1962,13 @@
     </Compile>
     <Compile Include="Admin\ThietBi.aspx.designer.cs">
       <DependentUpon>ThietBi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ThoiGian.aspx.cs">
+      <DependentUpon>ThoiGian.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ThoiGian.aspx.designer.cs">
+      <DependentUpon>ThoiGian.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Users.aspx.cs">
       <DependentUpon>Users.aspx</DependentUpon>
