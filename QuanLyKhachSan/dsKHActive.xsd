@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsKHActive" targetNamespace="http://tempuri.org/dsKHActive.xsd" xmlns:mstns="http://tempuri.org/dsKHActive.xsd" xmlns="http://tempuri.org/dsKHActive.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="QLKSConnection" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLKSConnection (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.QLKSConnection.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V03_KHACTIVETableAdapter" GeneratorDataComponentClassName="V03_KHACTIVETableAdapter" Name="V03_KHACTIVE" UserDataComponentName="V03_KHACTIVETableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLKSConnection (Web.config)" DbObjectName="QLKS.dbo.V03_KHACTIVE" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT KH_MA, CTDP_CMND, CTDP_HOTEN, P_MA, DDP_MA, DDP_SONGUOI, DDP_THOIGIANDEN, DDP_THOIGIANDI, DDP_DATCOC, DV_MA, DVSD_SOLUONG FROM dbo.V03_KHACTIVE</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="KH_MA" DataSetColumn="KH_MA" />
+              <Mapping SourceColumn="CTDP_CMND" DataSetColumn="CTDP_CMND" />
+              <Mapping SourceColumn="CTDP_HOTEN" DataSetColumn="CTDP_HOTEN" />
+              <Mapping SourceColumn="P_MA" DataSetColumn="P_MA" />
+              <Mapping SourceColumn="DDP_MA" DataSetColumn="DDP_MA" />
+              <Mapping SourceColumn="DDP_SONGUOI" DataSetColumn="DDP_SONGUOI" />
+              <Mapping SourceColumn="DDP_THOIGIANDEN" DataSetColumn="DDP_THOIGIANDEN" />
+              <Mapping SourceColumn="DDP_THOIGIANDI" DataSetColumn="DDP_THOIGIANDI" />
+              <Mapping SourceColumn="DDP_DATCOC" DataSetColumn="DDP_DATCOC" />
+              <Mapping SourceColumn="DV_MA" DataSetColumn="DV_MA" />
+              <Mapping SourceColumn="DVSD_SOLUONG" DataSetColumn="DVSD_SOLUONG" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsKHActive" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsKHActive" msprop:Generator_UserDSName="dsKHActive">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V03_KHACTIVE" msprop:Generator_TableClassName="V03_KHACTIVEDataTable" msprop:Generator_TableVarName="tableV03_KHACTIVE" msprop:Generator_TablePropName="V03_KHACTIVE" msprop:Generator_RowDeletingName="V03_KHACTIVERowDeleting" msprop:Generator_RowChangingName="V03_KHACTIVERowChanging" msprop:Generator_RowEvHandlerName="V03_KHACTIVERowChangeEventHandler" msprop:Generator_RowDeletedName="V03_KHACTIVERowDeleted" msprop:Generator_UserTableName="V03_KHACTIVE" msprop:Generator_RowChangedName="V03_KHACTIVERowChanged" msprop:Generator_RowEvArgName="V03_KHACTIVERowChangeEvent" msprop:Generator_RowClassName="V03_KHACTIVERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KH_MA" msprop:Generator_ColumnVarNameInTable="columnKH_MA" msprop:Generator_ColumnPropNameInRow="KH_MA" msprop:Generator_ColumnPropNameInTable="KH_MAColumn" msprop:Generator_UserColumnName="KH_MA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CTDP_CMND" msprop:Generator_ColumnVarNameInTable="columnCTDP_CMND" msprop:Generator_ColumnPropNameInRow="CTDP_CMND" msprop:Generator_ColumnPropNameInTable="CTDP_CMNDColumn" msprop:Generator_UserColumnName="CTDP_CMND">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CTDP_HOTEN" msprop:Generator_ColumnVarNameInTable="columnCTDP_HOTEN" msprop:Generator_ColumnPropNameInRow="CTDP_HOTEN" msprop:Generator_ColumnPropNameInTable="CTDP_HOTENColumn" msprop:Generator_UserColumnName="CTDP_HOTEN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="P_MA" msprop:Generator_ColumnVarNameInTable="columnP_MA" msprop:Generator_ColumnPropNameInRow="P_MA" msprop:Generator_ColumnPropNameInTable="P_MAColumn" msprop:Generator_UserColumnName="P_MA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DDP_MA" msprop:Generator_ColumnVarNameInTable="columnDDP_MA" msprop:Generator_ColumnPropNameInRow="DDP_MA" msprop:Generator_ColumnPropNameInTable="DDP_MAColumn" msprop:Generator_UserColumnName="DDP_MA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DDP_SONGUOI" msprop:Generator_ColumnVarNameInTable="columnDDP_SONGUOI" msprop:Generator_ColumnPropNameInRow="DDP_SONGUOI" msprop:Generator_ColumnPropNameInTable="DDP_SONGUOIColumn" msprop:Generator_UserColumnName="DDP_SONGUOI" type="xs:int" minOccurs="0" />
+              <xs:element name="DDP_THOIGIANDEN" msprop:Generator_ColumnVarNameInTable="columnDDP_THOIGIANDEN" msprop:Generator_ColumnPropNameInRow="DDP_THOIGIANDEN" msprop:Generator_ColumnPropNameInTable="DDP_THOIGIANDENColumn" msprop:Generator_UserColumnName="DDP_THOIGIANDEN" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DDP_THOIGIANDI" msprop:Generator_ColumnVarNameInTable="columnDDP_THOIGIANDI" msprop:Generator_ColumnPropNameInRow="DDP_THOIGIANDI" msprop:Generator_ColumnPropNameInTable="DDP_THOIGIANDIColumn" msprop:Generator_UserColumnName="DDP_THOIGIANDI" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DDP_DATCOC" msprop:Generator_ColumnVarNameInTable="columnDDP_DATCOC" msprop:Generator_ColumnPropNameInRow="DDP_DATCOC" msprop:Generator_ColumnPropNameInTable="DDP_DATCOCColumn" msprop:Generator_UserColumnName="DDP_DATCOC" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DV_MA" msprop:Generator_ColumnVarNameInTable="columnDV_MA" msprop:Generator_ColumnPropNameInRow="DV_MA" msprop:Generator_ColumnPropNameInTable="DV_MAColumn" msprop:Generator_UserColumnName="DV_MA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DVSD_SOLUONG" msprop:Generator_ColumnVarNameInTable="columnDVSD_SOLUONG" msprop:Generator_ColumnPropNameInRow="DVSD_SOLUONG" msprop:Generator_ColumnPropNameInTable="DVSD_SOLUONGColumn" msprop:Generator_UserColumnName="DVSD_SOLUONG" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

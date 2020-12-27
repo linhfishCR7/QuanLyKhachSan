@@ -81,3 +81,11 @@ D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhach
 D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\CKFinder.dll
 D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\CKFinder.pdb
 D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\AjaxControlToolkit.dll
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\RdlCompile.cache
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\RdlCompile.compiled
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\Microsoft.SqlServer.Types.dll
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\SqlServerTypes\x64\msvcr120.dll
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\SqlServerTypes\x86\msvcr120.dll
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\SqlServerTypes\x86\SqlServerSpatial140.dll

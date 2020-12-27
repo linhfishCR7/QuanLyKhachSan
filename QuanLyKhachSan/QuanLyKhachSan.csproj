@@ -86,11 +86,20 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.WebForms.v12.12.0.0.0\lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -193,21 +202,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="Account\AddPhoneNumber.aspx" />
-    <Content Include="Account\Confirm.aspx" />
-    <Content Include="Account\Forgot.aspx" />
-    <Content Include="Account\Lockout.aspx" />
-    <Content Include="Account\Login.aspx" />
-    <Content Include="Account\Manage.aspx" />
-    <Content Include="Account\ManageLogins.aspx" />
-    <Content Include="Account\ManagePassword.aspx" />
-    <Content Include="Account\OpenAuthProviders.ascx" />
-    <Content Include="Account\Register.aspx" />
-    <Content Include="Account\RegisterExternalLogin.aspx" />
-    <Content Include="Account\ResetPassword.aspx" />
-    <Content Include="Account\ResetPasswordConfirmation.aspx" />
-    <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
-    <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Admin\add\css\bootstrap-theme.css" />
     <Content Include="Admin\add\css\bootstrap-theme.min.css" />
     <Content Include="Admin\add\css\bootstrap.css" />
@@ -288,6 +282,7 @@
     <Content Include="Admin\assets\images\users\avatar-7.jpg" />
     <Content Include="Admin\assets\images\users\avatar-8.jpg" />
     <Content Include="Admin\assets\images\users\avatar-9.jpg" />
+    <Content Include="Admin\assets\images\vinpearl-luxury-landmark.jpg" />
     <Content Include="Admin\assets\js\app.min.js" />
     <Content Include="Admin\assets\js\pages\apexcharts.init.js" />
     <Content Include="Admin\assets\js\pages\c3.init.js" />
@@ -454,7 +449,12 @@
     <Content Include="Admin\auth\Logout.aspx" />
     <Content Include="Admin\auth\Register.aspx" />
     <Content Include="Admin\DichVu.aspx" />
+    <Content Include="Admin\KhachHang.aspx" />
     <Content Include="Admin\LoaiPhong.aspx" />
+    <Content Include="Admin\M01_LichLamViec.aspx" />
+    <Content Include="Admin\M02_DanhSachNhanVien.aspx" />
+    <Content Include="Admin\M03_KHActive.aspx" />
+    <Content Include="Admin\NhanVien.aspx" />
     <Content Include="Admin\ThietBi.aspx" />
     <Content Include="Admin\ThoiGian.aspx" />
     <Content Include="Admin\Users.aspx" />
@@ -1431,7 +1431,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Account\Web.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -1510,6 +1509,40 @@
     <Content Include="Admin\add\css\bootstrap.min.css.map" />
     <Content Include="Admin\add\Scripts\jquery-3.3.1.min.map" />
     <Content Include="Admin\add\Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="dsLich.xsc">
+      <DependentUpon>dsLich.xsd</DependentUpon>
+    </Content>
+    <Content Include="dsKHActive.xsc">
+      <DependentUpon>dsKHActive.xsd</DependentUpon>
+    </Content>
+    <None Include="dsKHActive.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsKHActive.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="dsKHActive.xss">
+      <DependentUpon>dsKHActive.xsd</DependentUpon>
+    </Content>
+    <None Include="dsLich.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLich.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="dsLich.xss">
+      <DependentUpon>dsLich.xsd</DependentUpon>
+    </Content>
+    <Content Include="dsNhanVien.xsc">
+      <DependentUpon>dsNhanVien.xsd</DependentUpon>
+    </Content>
+    <None Include="dsNhanVien.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsNhanVien.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="dsNhanVien.xss">
+      <DependentUpon>dsNhanVien.xsd</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\QLKS.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
@@ -1546,6 +1579,19 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Templates\files\Asp.net C#.txt" />
     <Content Include="Templates\images\1337638608254_ORIGINAL_Super_Portrait.jpg" />
     <Content Include="Templates\images\27.jpg" />
@@ -1788,111 +1834,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account\AddPhoneNumber.aspx.cs">
-      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\AddPhoneNumber.aspx.designer.cs">
-      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Confirm.aspx.cs">
-      <DependentUpon>Confirm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Confirm.aspx.designer.cs">
-      <DependentUpon>Confirm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Forgot.aspx.cs">
-      <DependentUpon>Forgot.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Forgot.aspx.designer.cs">
-      <DependentUpon>Forgot.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Lockout.aspx.cs">
-      <DependentUpon>Lockout.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Lockout.aspx.designer.cs">
-      <DependentUpon>Lockout.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Manage.aspx.cs">
-      <DependentUpon>Manage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Manage.aspx.designer.cs">
-      <DependentUpon>Manage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\ManageLogins.aspx.cs">
-      <DependentUpon>ManageLogins.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\ManageLogins.aspx.designer.cs">
-      <DependentUpon>ManageLogins.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\ManagePassword.aspx.cs">
-      <DependentUpon>ManagePassword.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\ManagePassword.aspx.designer.cs">
-      <DependentUpon>ManagePassword.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\OpenAuthProviders.ascx.cs">
-      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
-      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Register.aspx.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Register.aspx.designer.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
-      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
-      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\ResetPassword.aspx.cs">
-      <DependentUpon>ResetPassword.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\ResetPassword.aspx.designer.cs">
-      <DependentUpon>ResetPassword.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\ResetPasswordConfirmation.aspx.cs">
-      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\ResetPasswordConfirmation.aspx.designer.cs">
-      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.cs">
-      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.designer.cs">
-      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\VerifyPhoneNumber.aspx.cs">
-      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
-      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Admin\Admin_Layout.Master.cs">
       <DependentUpon>Admin_Layout.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1949,12 +1890,47 @@
     <Compile Include="Admin\DichVu.aspx.designer.cs">
       <DependentUpon>DichVu.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\KhachHang.aspx.cs">
+      <DependentUpon>KhachHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\KhachHang.aspx.designer.cs">
+      <DependentUpon>KhachHang.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\LoaiPhong.aspx.cs">
       <DependentUpon>LoaiPhong.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\LoaiPhong.aspx.designer.cs">
       <DependentUpon>LoaiPhong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\M01_LichLamViec.aspx.cs">
+      <DependentUpon>M01_LichLamViec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\M01_LichLamViec.aspx.designer.cs">
+      <DependentUpon>M01_LichLamViec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\M02_DanhSachNhanVien.aspx.cs">
+      <DependentUpon>M02_DanhSachNhanVien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\M02_DanhSachNhanVien.aspx.designer.cs">
+      <DependentUpon>M02_DanhSachNhanVien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\M03_KHActive.aspx.cs">
+      <DependentUpon>M03_KHActive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\M03_KHActive.aspx.designer.cs">
+      <DependentUpon>M03_KHActive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NhanVien.aspx.cs">
+      <DependentUpon>NhanVien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NhanVien.aspx.designer.cs">
+      <DependentUpon>NhanVien.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\ThietBi.aspx.cs">
       <DependentUpon>ThietBi.aspx</DependentUpon>
@@ -2009,6 +1985,21 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="dsKHActive.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsKHActive.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsLich.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLich.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsNhanVien.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsNhanVien.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2028,6 +2019,7 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -2042,6 +2034,11 @@
     <Folder Include="ckfinder\userfiles\images\" />
     <Folder Include="Templates\flash\" />
     <Folder Include="Templates\_thumbs\Files\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report\RLich.rdlc" />
+    <EmbeddedResource Include="Report\RKHActive.rdlc" />
+    <EmbeddedResource Include="Report\RNhanVien.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
