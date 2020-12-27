@@ -80,3 +80,14 @@ D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhach
 D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\Microsoft.Owin.Security.OAuth.xml
 D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\obj\Release\QuanLyKhachSan.dll
 D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\obj\Release\QuanLyKhachSan.pdb
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\SqlServerTypes\x64\msvcr120.dll
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\SqlServerTypes\x86\msvcr120.dll
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\Microsoft.SqlServer.Types.dll
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\obj\Release\RdlCompile.cache
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\obj\Release\RdlCompile.compiled
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\Microsoft.ReportViewer.Common.dll
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\Visual Studio 2015\Templates\ProjectTemplates\Visual C#\NghienCuu\QuanLyKhachSan\QuanLyKhachSan\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll

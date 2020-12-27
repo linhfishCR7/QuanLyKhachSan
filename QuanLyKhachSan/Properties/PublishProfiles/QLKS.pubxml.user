@@ -67,7 +67,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/19/2020 14:28:05</publishTime>
     </File>
     <File Include="Admin/Admin_Layout.Master">
-      <publishTime>12/26/2020 14:25:57</publishTime>
+      <publishTime>12/27/2020 22:27:35</publishTime>
     </File>
     <File Include="Admin/assets/css/app.min.css">
       <publishTime>12/18/2020 11:11:31</publishTime>
@@ -401,6 +401,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Admin/assets/images/users/avatar-9.jpg">
       <publishTime>12/18/2020 11:11:32</publishTime>
+    </File>
+    <File Include="Admin/assets/images/vinpearl-luxury-landmark.jpg">
+      <publishTime>12/27/2020 22:14:55</publishTime>
     </File>
     <File Include="Admin/assets/js/app.min.js">
       <publishTime>12/18/2020 11:11:32</publishTime>
@@ -898,7 +901,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/21/2020 22:55:37</publishTime>
     </File>
     <File Include="Admin/Dashboard.aspx">
-      <publishTime>12/27/2020 15:35:27</publishTime>
+      <publishTime>12/27/2020 22:27:37</publishTime>
     </File>
     <File Include="Admin/DichVu.aspx">
       <publishTime>12/22/2020 10:06:11</publishTime>
@@ -909,8 +912,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Admin/LoaiPhong.aspx">
       <publishTime>12/26/2020 14:08:29</publishTime>
     </File>
+    <File Include="Admin/M01_LichLamViec.aspx">
+      <publishTime>12/27/2020 21:58:44</publishTime>
+    </File>
+    <File Include="Admin/M02_DanhSachNhanVien.aspx">
+      <publishTime>12/27/2020 22:01:26</publishTime>
+    </File>
+    <File Include="Admin/M03_KHActive.aspx">
+      <publishTime>12/27/2020 22:04:52</publishTime>
+    </File>
     <File Include="Admin/NhanVien.aspx">
-      <publishTime>12/27/2020 12:58:37</publishTime>
+      <publishTime>12/27/2020 18:57:16</publishTime>
     </File>
     <File Include="Admin/ThietBi.aspx">
       <publishTime>12/26/2020 14:08:00</publishTime>
@@ -1020,11 +1032,26 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
       <publishTime>02/13/2015 13:16:42</publishTime>
     </File>
+    <File Include="bin/Microsoft.ReportViewer.Common.dll">
+      <publishTime>06/02/2016 17:42:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.DataVisualization.dll">
+      <publishTime>06/02/2016 17:42:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.ProcessingObjectModel.dll">
+      <publishTime>06/02/2016 17:42:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.dll">
+      <publishTime>01/11/2017 08:06:48</publishTime>
+    </File>
     <File Include="bin/Microsoft.ScriptManager.MSAjax.dll">
       <publishTime>09/06/2013 11:20:12</publishTime>
     </File>
     <File Include="bin/Microsoft.ScriptManager.WebForms.dll">
       <publishTime>09/06/2013 11:20:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Types.dll">
+      <publishTime>12/10/2016 15:26:34</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>01/05/2012 11:08:46</publishTime>
@@ -1036,7 +1063,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/27/2012 13:00:52</publishTime>
     </File>
     <File Include="bin/QuanLyKhachSan.dll">
-      <publishTime>12/27/2020 16:49:00</publishTime>
+      <publishTime>12/28/2020 00:23:54</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>06/18/2015 20:19:46</publishTime>
@@ -1073,6 +1100,18 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe.config">
       <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x64/msvcr120.dll">
+      <publishTime>12/27/2020 19:59:17</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x64/SqlServerSpatial140.dll">
+      <publishTime>12/27/2020 19:59:17</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x86/msvcr120.dll">
+      <publishTime>12/27/2020 19:59:16</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x86/SqlServerSpatial140.dll">
+      <publishTime>12/27/2020 19:59:16</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
       <publishTime>02/11/2014 15:26:04</publishTime>
@@ -4041,6 +4080,24 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Default.aspx">
       <publishTime>12/18/2020 10:53:51</publishTime>
     </File>
+    <File Include="dsKHActive.xsc">
+      <publishTime>12/27/2020 21:31:27</publishTime>
+    </File>
+    <File Include="dsKHActive.xss">
+      <publishTime>12/27/2020 21:31:27</publishTime>
+    </File>
+    <File Include="dsLich.xsc">
+      <publishTime>12/27/2020 20:15:39</publishTime>
+    </File>
+    <File Include="dsLich.xss">
+      <publishTime>12/27/2020 20:15:39</publishTime>
+    </File>
+    <File Include="dsNhanVien.xsc">
+      <publishTime>12/27/2020 21:07:45</publishTime>
+    </File>
+    <File Include="dsNhanVien.xss">
+      <publishTime>12/27/2020 21:07:45</publishTime>
+    </File>
     <File Include="favicon.ico">
       <publishTime>12/18/2020 10:53:51</publishTime>
     </File>
@@ -4060,7 +4117,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/18/2020 10:53:51</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>12/26/2020 14:13:21</publishTime>
+      <publishTime>12/28/2020 00:21:47</publishTime>
     </File>
     <File Include="Scripts/ai.0.22.9-build00167.js">
       <publishTime>12/18/2020 10:54:11</publishTime>
@@ -4163,6 +4220,21 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Site.Mobile.Master">
       <publishTime>12/18/2020 10:53:59</publishTime>
+    </File>
+    <File Include="SqlServerTypes/readme.htm">
+      <publishTime>12/27/2020 19:59:15</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x64/msvcr120.dll">
+      <publishTime>12/27/2020 19:59:17</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x64/SqlServerSpatial140.dll">
+      <publishTime>12/27/2020 19:59:17</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x86/msvcr120.dll">
+      <publishTime>12/27/2020 19:59:16</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x86/SqlServerSpatial140.dll">
+      <publishTime>12/27/2020 19:59:16</publishTime>
     </File>
     <File Include="Templates/files/Asp.net C#.txt">
       <publishTime>12/19/2020 13:08:15</publishTime>
@@ -4849,7 +4921,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/18/2020 10:53:59</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/27/2020 16:49:01</publishTime>
+      <publishTime>12/28/2020 00:23:55</publishTime>
     </File>
   </ItemGroup>
 </Project>

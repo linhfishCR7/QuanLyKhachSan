@@ -165,7 +165,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label for="field-2" class="control-label">ID: (*)</label>
-                                            <asp:TextBox ID="txtNV_MA1" runat="server" CssClass="form-control"></asp:TextBox>
+                                            <asp:TextBox ID="txtNV_MA1" runat="server" CssClass="form-control" ReadOnly="true"></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>
@@ -219,7 +219,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label for="field-4" class="control-label">Phone Number: (*)</label>
+                                            <label for="field-1" class="control-label">Phone Number: (*)</label>
                                             <asp:TextBox ID="txtNV_SDT1" runat="server" CssClass="form-control"></asp:TextBox>
                                         </div>
                                     </div>
@@ -286,7 +286,7 @@
                     <asp:Parameter Name="VTCT_MA" Type="String" />
                     <asp:Parameter Name="NV_HOTEN" Type="String" />
                     <asp:Parameter Name="NV_NAMSINH" Type="Int32" />
-                    <asp:Parameter Name="NV_GIOITINH" Type="Boolean" />
+                    <asp:Parameter Name="NV_GIOITINH" Type="String" />
                     <asp:Parameter Name="NV_DIACHI" Type="String" />
                     <asp:Parameter Name="NV_SDT" Type="String" />
                 </InsertParameters>
@@ -294,7 +294,7 @@
                     <asp:Parameter Name="VTCT_MA" Type="String" />
                     <asp:Parameter Name="NV_HOTEN" Type="String" />
                     <asp:Parameter Name="NV_NAMSINH" Type="Int32" />
-                    <asp:Parameter Name="NV_GIOITINH" Type="Boolean" />
+                    <asp:Parameter Name="NV_GIOITINH" Type="String" />
                     <asp:Parameter Name="NV_DIACHI" Type="String" />
                     <asp:Parameter Name="NV_SDT" Type="String" />
                     <asp:Parameter Name="NV_MA" Type="String" />
